@@ -1,0 +1,88 @@
+body {
+  font-family: sans-serif;
+}
+
+.App {
+  display: flex;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.App-nav {
+  background-color: lavender;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 1%;
+  overflow-y: auto;
+}
+
+.App-nav * {
+  color: black;
+  border-bottom: 1px solid white;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.App-routes {
+  display: flex;
+  flex: 5;
+}
+
+.Caret-Left {
+  font-size: 150%;
+  margin-top: 1%;
+  position: absolute;
+}
+
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  margin: 1% 1% 1% 0;
+  overflow-y: auto;
+}
+
+.container-header {
+  background-color: lavender;
+  margin-bottom: 1%;
+  padding: 1%
+}
+
+.container-body {
+  flex: 1;
+}
+
+.header {
+  font-size: 200%;
+  font-weight: bold;
+  text-align: center;
+}
+
+.stack {
+  animation: push 1s;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 1px 0;
+  padding: 2px 5px;
+  text-align: center;
+  width: 100px;
+}
+
+@keyframes push {
+  from { 
+    margin-bottom: 30px;
+    opacity: 0.1;
+  }
+  to {
+    margin-bottom: 0;
+    opacity: 1;
+  }
+}
